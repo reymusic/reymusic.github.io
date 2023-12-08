@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Static/CSS/index.css">
+    <link rel="stylesheet" href="../Static/CSS/login.css">
+    <link rel="stylesheet" media="only screen and (max-width:569px)" href="../Static/CSS/login_tab.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="index.html">
+            <div class="logo-section">
+                <img src="../Static/IMG/Chess_GT.png" alt="site.logo.png" id="logo">
+                <h1>Chess GT</h1>
+            </div>
+        </a>
+    </nav>
+    <div class="window">
+        <div>
+            <button class="btn" id="btn1" onclick="logintab()">Login</button>
+            <button class="btn" id="btn2" onclick="signuptab()">Sign up</button>
+        </div>
+    </div>
+    <div class="user-form">
+        <form id="signup" action="" method="post">
+            <div class="input-field">
+                <label for="username">Username </label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="input-field">
+                <label for="name">Display Name </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input-field">
+                <label for="passord">Email </label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Password </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="input-field">
+                <label for="repassord">Re-Enter Password </label>
+                <input type="password" name="repassword" id="repassword" required>
+            </div>
+            <div class="choice">
+                <div class="box1">
+                    <input type="checkbox" name="Remember" id="check1">
+                    <label for="check1">I Agree with Chess GT T&C</label>
+                </div>
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+
+        <form id="login" action="/Template/index.html" method="post">
+            <div class="input-field">
+                <label for="username">Username </label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Password </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="choice">
+                <div class="box1">
+                    <input type="checkbox" name="Remember" id="check2">
+                    <label for="check2">Remember me</label>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <script>
+    </script>
+    <script src="../Static/JS/login.js"></script>
+</body>
+
+</html>

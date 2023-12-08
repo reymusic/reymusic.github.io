@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Champion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Static/CSS/index.css">
+    <link rel="stylesheet" media="only screen and (max-width:865px)" href="../Static/CSS/tab_index.css">
+    <!-- <link rel="stylesheet" href="../Static/CSS/playground.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #navbar {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="index.html">
+            <div class="logo-section">
+                <img src="../Static/IMG/Chess_GT.png" alt="site.logo.png" id="logo">
+                <h1>Chess GT</h1>
+            </div>
+        </a>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="" class="active">Playground</a></li>
+            <li><a href="reward.html">Rewards</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+        <div id="nav-menu">
+            <div class="cart-btn">
+                <img src="../Static/IMG/rewards.png" alt="shop.png" id="logo">
+                <div class="count" id="count">0</div>
+            </div>
+            <div class="menu" id="menu-btn">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+        </div>
+    </nav>
+    <div class="menubar" id="menu-btn-options">
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <hr>
+            <li class="active"><a href="">Playground</a></li>
+            <hr>
+            <li><a href="reward.html">Rewards</a></li>
+            <hr>
+            <li><a href="community.html">Community</a></li>
+            <hr>
+            <li><a href="faqs.html">FAQs</a></li>
+            <hr>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="chess-board">
+            <ul>
+                <li id="00" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_elephant.png" id="be1" class="chess-piece black-piece"
+                        alt="black_elephant.png">
+                </li>
+                <li id="01" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_horse.png" id="bh1" class="chess-piece black-piece"
+                        alt="black_horse.png">
+                </li>
+                <li id="02" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_camel.png" id="bc1" class="chess-piece black-piece"
+                        alt="black_cammel.png">
+                </li>
+                <li id="03" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_queen.png" id="bq" class="chess-piece black-piece"
+                        alt="black_queen.png">
+                </li>
+                <li id="04" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_king.png" id="bk" class="chess-piece black-piece"
+                        alt="black_king.png">
+                </li>
+                <li id="05" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_camel.png" id="bc2" class="chess-piece black-piece"
+                        alt="black_cammel.png">
+                </li>
+                <li id="06" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_horse.png" id="bh2" class="chess-piece black-piece"
+                        alt="black_horse.png">
+                </li>
+                <li id="07" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_elephant.png" id="be2" class="chess-piece black-piece"
+                        alt="black_elephant.png">
+                </li>
+            </ul>
+            <ul>
+                <li id="10" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_soldier.png" id="bs1" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li id="11" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_soldier.png" id="bs2" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li id="12" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_soldier.png" id="bs3" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li id="13" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_soldier.png" id="bs4" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li id="14" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_soldier.png" id="bs5" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li id="15" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_soldier.png" id="bs6" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li id="16" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_soldier.png" id="bs7" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li id="17" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/black_soldier.png" id="bs8" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+            </ul>
+            <ul>
+                <li id="20" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="21" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="22" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="23" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="24" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="25" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="26" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="27" class="squares">
+                    <div class="direct"></div>
+                </li>
+            </ul>
+            <ul>
+                <li id="30" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="31" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="32" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="33" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="34" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="35" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="36" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="37" class="squares">
+                    <div class="direct"></div>
+                </li>
+            </ul>
+            <ul>
+                <li id="40" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="41" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="42" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="43" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="44" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="45" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="46" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="47" class="squares">
+                    <div class="direct"></div>
+                </li>
+            </ul>
+            <ul>
+                <li id="50" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="51" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="52" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="53" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="54" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="55" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="56" class="squares">
+                    <div class="direct"></div>
+                </li>
+                <li id="57" class="squares">
+                    <div class="direct"></div>
+                </li>
+            </ul>
+            <ul>
+                <li id="60" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_soldier.png" id="ws8" class="chess-piece white-piece turn"
+                        alt="white_soldier.png">
+                </li>
+                <li id="61" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_soldier.png" id="ws7" class="chess-piece white-piece turn"
+                        alt="white_soldier.png">
+                </li>
+                <li id="62" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_soldier.png" id="ws6" class="chess-piece white-piece turn"
+                        alt="white_soldier.png">
+                </li>
+                <li id="63" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_soldier.png" id="ws5" class="chess-piece white-piece turn"
+                        alt="white_soldier.png">
+                </li>
+                <li id="64" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_soldier.png" id="ws4" class="chess-piece white-piece turn"
+                        alt="white_soldier.png">
+                </li>
+                <li id="65" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_soldier.png" id="ws3" class="chess-piece white-piece turn"
+                        alt="white_soldier.png">
+                </li>
+                <li id="66" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_soldier.png" id="ws2" class="chess-piece white-piece turn"
+                        alt="white_soldier.png">
+                </li>
+                <li id="67" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_soldier.png" id="ws1" class="chess-piece white-piece turn"
+                        alt="white_soldier.png">
+                </li>
+            </ul>
+            <ul>
+                <li id="70" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_elephant.png" id="we2" class="chess-piece white-piece turn"
+                        alt="white_elephant.png">
+                </li>
+                <li id="71" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_horse.png" id="wh2" class="chess-piece white-piece turn"
+                        alt="white_horse.png">
+                </li>
+                <li id="72" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_camel.png" id="wc2" class="chess-piece white-piece turn"
+                        alt="white_cammel.png">
+                </li>
+                <li id="73" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_queen.png" id="wq" class="chess-piece white-piece turn"
+                        alt="white_queen.png">
+                </li>
+                <li id="74" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_king.png" id="wk" class="chess-piece white-piece turn"
+                        alt="white_king.png">
+                </li>
+                <li id="75" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_camel.png" id="wc1" class="chess-piece white-piece turn"
+                        alt="white_cammel.png">
+                </li>
+                <li id="76" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_horse.png" id="wh1" class="chess-piece white-piece turn"
+                        alt="white_horse.png">
+                </li>
+                <li id="77" class="squares">
+                    <div class="direct"></div>
+                    <img src="../Static/IMG/white_elephant.png" id="we1" class="chess-piece white-piece turn"
+                        alt="white_elephant.png">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy;&nbsp;&nbsp;&nbsp;Copytight 2023 by Chess GT</p>
+    </footer>
+    <script src="../Static/JS/index.js"></script>
+    <script src="../Static/JS/chess.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Champion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Static/CSS/index.css">
+    <link rel="stylesheet" media="only screen and (max-width:865px)" href="../Static/CSS/tab_index.css">
+    <link rel="stylesheet" href="../Static/CSS/playground.css">
+    <link rel="stylesheet" href="../Static/CSS/login.css">
+    <link rel="stylesheet" media="only screen and (max-width:569px)" href="../Static/CSS/login_tab.css">
+    <style>
+        .container{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="index.html">
+            <div class="logo-section">
+                <img src="../Static/IMG/Chess_GT.png" alt="site.logo.png" id="logo">
+                <h1>Chess GT</h1>
+            </div>
+        </a>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="" class="active">Playground</a></li>
+            <li><a href="reward.html">Rewards</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+        <div id="nav-menu">
+            <div class="cart-btn">
+                <img src="../Static/IMG/rewards.png" alt="shop.png" id="logo">
+                <div class="count" id="count">0</div>
+            </div>
+            <div class="menu" id="menu-btn">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+        </div>
+    </nav>
+    <div class="menubar" id="menu-btn-options">
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <hr>
+            <li class="active"><a href="">Playground</a></li>
+            <hr>
+            <li><a href="reward.html">Rewards</a></li>
+            <hr>
+            <li><a href="community.html">Community</a></li>
+            <hr>
+            <li><a href="faqs.html">FAQs</a></li>
+            <hr>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+
+    <div id="dashboard">
+        <button onclick="createPlayground()" id="create-chess">Create Playground</button>
+        <div class="loader">
+            <h1>Preparing</h1>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="chess-board">
+            <ul>
+                <li class="squares">
+                    <img src="../Static/IMG/black_elephant.png" id="be1" class="chess-piece black-piece"
+                        alt="black_elephant.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_horse.png" id="bh1" class="chess-piece black-piece"
+                        alt="black_horse.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_camel.png" id="bc1" class="chess-piece black-piece"
+                        alt="black_cammel.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_queen.png" id="bq" class="chess-piece black-piece"
+                        alt="black_queen.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_king.png" id="bk" class="chess-piece black-piece"
+                        alt="black_king.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_camel.png" id="bc2" class="chess-piece black-piece"
+                        alt="black_cammel.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_horse.png" id="bh2" class="chess-piece black-piece"
+                        alt="black_horse.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_elephant.png" id="be2" class="chess-piece black-piece"
+                        alt="black_elephant.png">
+                </li>
+            </ul>
+            <ul>
+                <li class="squares">
+                    <img src="../Static/IMG/black_soldier.png" id="bs1" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_soldier.png" id="bs2" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_soldier.png" id="bs3" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_soldier.png" id="bs4" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_soldier.png" id="bs5" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_soldier.png" id="bs6" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_soldier.png" id="bs7" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/black_soldier.png" id="bs8" class="chess-piece black-piece"
+                        alt="black_soldier.png">
+                </li>
+            </ul>
+            <ul>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+            </ul>
+            <ul>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+            </ul>
+            <ul>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+            </ul>
+            <ul>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+            </ul>
+            <ul>
+                <li class="squares">
+                    <img src="../Static/IMG/white_soldier.png" id="ws1" class="chess-piece white-piece"
+                        alt="white_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_soldier.png" id="ws2" class="chess-piece white-piece"
+                        alt="white_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_soldier.png" id="ws3" class="chess-piece white-piece"
+                        alt="white_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_soldier.png" id="ws4" class="chess-piece white-piece"
+                        alt="white_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_soldier.png" id="ws5" class="chess-piece white-piece"
+                        alt="white_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_soldier.png" id="ws6" class="chess-piece white-piece"
+                        alt="white_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_soldier.png" id="ws7" class="chess-piece white-piece"
+                        alt="white_soldier.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_soldier.png" id="ws8" class="chess-piece white-piece"
+                        alt="white_soldier.png">
+                </li>
+            </ul>
+            <ul>
+                <li class="squares">
+                    <img src="../Static/IMG/white_elephant.png" id="we1" class="chess-piece white-piece"
+                        alt="white_elephant.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_horse.png" id="wh1" class="chess-piece white-piece"
+                        alt="white_horse.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_camel.png" id="wc1" class="chess-piece white-piece"
+                        alt="white_cammel.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_queen.png" id="wq" class="chess-piece white-piece"
+                        alt="white_queen.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_king.png" id="wk" class="chess-piece white-piece"
+                        alt="white_king.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_camel.png" id="wc2" class="chess-piece white-piece"
+                        alt="white_cammel.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_horse.png" id="wh2" class="chess-piece white-piece"
+                        alt="white_horse.png">
+                </li>
+                <li class="squares">
+                    <img src="../Static/IMG/white_elephant.png" id="we2" class="chess-piece white-piece"
+                        alt="white_elephant.png">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg-shadow">
+        <div id="player-form" class="user-form">
+            <form id="login" action="/Template/chess_board.html">
+                <div class="input-field">
+                    <label for="player1">Player 1 </label>
+                    <input type="text" name="player1" id="player1" required>
+                </div>
+                <div class="input-field">
+                    <label for="name">Player 2 </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input-field">
+                    <label for="passord">P2 Email </label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="choice">
+                    <div class="box1">
+                        <input type="checkbox" name="Remember" id="check1" checked required>
+                        <label for="check1">I Take Whites</label>
+                    </div>
+                </div>
+                <input type="submit" value="Get Invitation Link">
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-area">
+            <div class="about-us">
+                <h1>About Us</h1>
+                <div>
+                    <a href="#" target="_blank">Foundation</a>
+                </div>
+                <div>
+                    <a href="#" target="_blank">Presence</a>
+                </div>
+                <div>
+                    <a href="#" target="_blank">Vision</a>
+                </div>
+                <div>
+                    <a href="#" target="_blank">Mission</a>
+                </div>
+            </div>
+            <div class="career">
+                <h1>Career</h1>
+                <div>
+                    <a href="#" target="_blank">Graphic Designer</a>
+                </div>
+                <div>
+                    <a href="#" target="_blank">Game Developer</a>
+                </div>
+                <div>
+                    <a href="#" target="_blank">Blogger</a>
+                </div>
+                <div>
+                    <a href="#" target="_blank">UI Designer</a>
+                </div>
+            </div>
+            <div class="highlights">
+                <h1>Highlights</h1>
+                <div>
+                    <a href="#" target="_blank">Chess GT</a>
+                </div>
+                <div>
+                    <a href="#" target="_blank">Tournament</a>
+                </div>
+                <div>
+                    <a href="#" target="_blank">1v1 Challenge</a>
+                </div>
+                <div>
+                    <a href="#" target="_blank">1M Community</a>
+                </div>
+            </div>
+            <div class="social">
+                <h1 style="font-size: 1.2rem;">Social Links</h1>
+                <div>
+                    <img src="../Static/IMG/twitter.png" alt="@Chess_GT">
+                    <a href="https://twitter.com/@Chess_GT" target="_blank">Twitter</a>
+                </div>
+                <div>
+                    <img src="../Static/IMG/instagram.png" alt="@Chess_GT">
+                    <a href="https://instagram.com/@Chess_GT" target="_blank">Instagram</a>
+                </div>
+                <div>
+                    <img src="../Static/IMG/facebook.png" alt="@Chess_GT">
+                    <a href="https://facebook.com/@Chess_GT" target="_blank">Facebook</a>
+                </div>
+                <div>
+                    <img src="../Static/IMG/youtube.png" alt="@Chess_GT">
+                    <a href="https://youtube.com/@Chess_GT" target="_blank">Youtube</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>&copy;&nbsp;&nbsp;&nbsp;Copytight 2023 by Chess GT</p>
+    </footer>
+    <script src="../Static/JS/index.js"></script>
+    <script>
+        let change = () => {
+            document.body.style.backgroundColor = "rgb(255 246 246 / 56%)";
+            document.getElementsByClassName('footer-area')[0].style.display = 'none';
+            document.getElementsByClassName('loader')[0].style.display = 'flex';
+            document.getElementById('create-chess').style.display = 'none';
+        }
+        let chessboard = () => {
+            document.getElementsByClassName('loader')[0].style.display = 'none';
+            document.getElementById('dashboard').style.display = 'none';
+            setTimeout(player1, 2500);   
+            document.getElementsByClassName('container')[0].style.display = 'flex';
+            document.getElementById('navbar').style.position = 'relative';
+        }
+        let player1 = () => {
+            document.getElementsByClassName('bg-shadow')[0].style.display = 'flex';
+            document.getElementById('player-form').style.display = 'flex';
+        }
+        function createPlayground() {
+            setTimeout(change, 500);
+            setTimeout(chessboard, 8000);
+        }
+    </script>
+
+</body>
+
+</html>
