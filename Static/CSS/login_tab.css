@@ -1,0 +1,91 @@
+        /* Navigation Menu : logo section */
+        .logo-section img {
+            width: 40px;
+            height: 40px;
+            margin: 8px;
+        }
+
+        .logo-section h1 {
+            font-size: 1.3rem;
+        }
+
+        /* Window for chnge login / signup tab withinn same page */
+
+        .window #btn1 {
+            font-size: 1rem;
+            padding: 8px 12px;
+            background-color: var(--txtcolor);
+            color: var(--black-color);
+            border: none;
+            cursor: pointer;
+            border-radius: 23px 0px 0px 23px;
+        }
+
+        .window #btn2 {
+            border: none;
+            padding: 8px 12px;
+            background-color: var(--black-color);
+            color: var(--txtcolor);
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 0px 23px 23px 0px;
+        }
+
+
+        /* userform tyling  */
+
+        .user-form input[type="submit"] {
+            font-size: 1rem;
+        }
+
+        .user-form {
+            width: 79vw;
+        }
+
+        .input-field {
+            width: 96%;
+            margin: 7px
+        }
+
+        .input-field input {
+            padding: 4px 10px;
+            font-size: 1rem;
+        }
+
+        .input-field label {
+            padding: 4px 10px;
+            font-size: 1rem;
+        }
+
+        .choice {
+            display: flex;
+            width: 77.5%;
+            margin: 1px 0px;
+            flex-direction: column;
+        }
+
+        .box1 label {
+            display: block;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:403px) {
+            .input-field {
+                align-items: left;
+                flex-direction: column;
+                align-items: baseline;
+            }
+            .input-field label {
+                padding: 4px 4px;
+            }
+            .input-field input {
+                width: 92%;
+            }
+            .box1 label {
+                display: block;
+                font-size: .9rem;
+                cursor: pointer;
+            }
+        }
+

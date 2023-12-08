@@ -1,0 +1,203 @@
+/* Navbar setting for tablet and mobile */
+#navbar {
+    justify-content: space-between;
+}
+
+#navbar ul {
+    display: none;
+}
+
+/* Navbar: Logo Section styling */
+.logo-section img {
+    width: 40px;
+    height: 40px;
+    margin: 6px;
+}
+
+.logo-section h1 {
+    font-size: 1.4rem;
+}
+
+/* Navigation Menu button visible */
+#nav-menu {
+    display: flex;
+}
+
+#menu-btn-options {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    width: auto;
+    z-index: 2;
+    position: fixed;
+    right: 0px;
+    background: #313131;
+    border-radius: 6px 0px 1px 6px;
+}
+
+#menu-btn-options ul {
+    list-style: none;
+}
+
+#menu-btn-options ul li {
+    padding: 9px 39px;
+}
+
+#menu-btn-options ul li a {
+    text-decoration: none;
+    color: var(--color);
+    font-size: .8rem;
+}
+
+/* Rewards button setting: media query */
+@media screen and (max-width:338px) {
+    #reward {
+        display: none;
+    }
+}
+
+/* Chess Board: media Query */
+@media screen and (max-width:682px) {
+
+    /* Chess Board styling */
+    .chess-board {
+        aspect-ratio: 1/1;
+        width: 96vw;
+        margin: 0px;
+        padding: 5px;
+        border: 5px solid chocolate;
+        background-color: rgb(255 203 203);
+    }
+
+    .chess-board ul {
+        grid-template-columns: repeat(8, 11.6vw);
+        grid-template-rows: repeat(1, 11.6vw);
+        flex-grow: 1;
+        grid-gap: 0px;
+    }
+
+    /* make chess board 3D */
+    .container {
+        transform: rotateX(0deg);
+        width: 99vw;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    /* Chess Pieces style */
+    .chess-piece {
+        transform: rotateX(10deg);
+        width: 13vw;
+        height: 12vw;
+        display: block;
+        position: relative;
+        top: -4vw;
+    }
+}
+
+/* Search bar Styling */
+@media only screen and (max-width:711px) {
+    #search-bar input[type=search] {
+        padding: 3px 2px;
+        border-radius: 28px;
+        background-size: 20px;
+        background-position: 7px 6px;
+        padding-left: 31px;
+        width: 41%;
+        font-size: 1rem;
+    }
+
+    #search-bar input[type=submit] {
+        padding: 4px 10px;
+        font-size: 1rem;
+        margin: 0px 10px;
+    }
+
+    #search-bar form {
+        padding: 4px 10px;
+    }
+
+    #scoreboard {
+        padding: 4px 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #scoreboard p {
+        margin: 0px 10px;
+        font-size: .9rem;
+        font-weight: bold;
+    }
+    .slideshow-container {
+        margin: 8px 1px;
+      }
+}
+
+/* search bar for smartphone */
+@media only screen and (max-width:488px) {
+    .logo-section {
+        margin: 0px 2px;
+    }
+
+    .logo-section h1 {
+        font-size: 1.1rem;
+    }
+
+    #search-bar {
+        padding: 1px 0px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #search-bar form input[type=search] {
+        padding: 1px 2px;
+        border-radius: 28px;
+        background-size: 14px;
+        background-position: 4px 5px;
+        padding-left: 24px;
+        width: 50%;
+        font-size: .8rem;
+    }
+
+    #search-bar input[type=submit] {
+        padding: 2px 5px;
+        font-size: 0.8rem;
+        margin: 0px 5px;
+    }
+
+    #search-bar form {
+        padding: 3px 8px;
+        font-size: .8rem;
+        justify-content: center;
+    }
+
+    #scoreboard {
+        padding: 4px 10px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #scoreboard p {
+        margin: 0px 8px;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+}
+
+/* media query for footer */
+@media screen and (max-width:564px) {
+    footer .footer-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 23px 0px 5px 0px;
+    }
+    .social div{
+        justify-content: center;
+    }
+}

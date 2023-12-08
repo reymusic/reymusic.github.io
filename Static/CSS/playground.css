@@ -1,0 +1,117 @@
+/* gameplay page styling */
+#dashboard {
+    position: relative;
+    width: 100vw;
+    aspect-ratio: 12/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#dashboard button {
+    background-color: aqua;
+    padding: 6px 12px;
+    border: aqua;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+#dashboard button {
+    background-color: aqua;
+    padding: 6px 12px;
+    border: aqua;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+#dashboard button:focus {
+    outline: 3px solid rgba(167, 255, 245, 0.233);
+}
+
+#dashboard::before {
+    content: "";
+    background: url('../IMG/chess_animation.gif');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+}
+
+/* loader animation and styling */
+.loader {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.loader h1 {
+    background-color: aqua;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 5px 20px;
+}
+
+.loader p {
+    background-color: cyan;
+    padding: 3px;
+    border-radius: 28px;
+    margin: 0px 12px;
+    animation-name: loading;
+    animation-delay: .25s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: alternate;
+    animation-iteration-count: infinite;
+    transition: all .5s;
+}
+
+.loader p:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.loader p:nth-child(3) {
+    animation-delay: .75s;
+}
+
+.loader p:nth-child(4) {
+    animation-delay: 1s;
+}
+
+@keyframes loading {
+    0% {
+        padding: 4px;
+    }
+
+    50% {
+        padding: 8px;
+    }
+
+    100% {
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width:853px) {
+    #dashboard button {
+        font-size: 1rem;
+    }
+}
+
+/* background shadow for form filling */
+.bg-shadow {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff94;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
